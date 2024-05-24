@@ -75,7 +75,7 @@ export default class TitleUiHandler extends OptionSelectUiHandler {
     const ret = super.show(args);
 
     if (ret) {
-      this.splashMessage = Utils.randItem(getSplashMessages());
+      this.splashMessage = "Server do Poketroll by Capim!";
       this.splashMessageText.setText(this.splashMessage.replace('{COUNT}', '?'));
 
       const ui = this.getUi();
